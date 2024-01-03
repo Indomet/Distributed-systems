@@ -1,11 +1,6 @@
 version: '3'
 
 services:
-  # redis:
-  #    image: 'redislabs/redismod'
-  #    ports:
-  #      - '6379:6379'
-
   api-gateway:
     build: ./api-gateway
     ports:
@@ -16,12 +11,20 @@ services:
     ports:
       - "8080:80"
 
+  frontend-patient:
+    build: ./frontend-patient/client
+    ports:
+      - "5173:80"
+
+  frontend-dentist:
+    build: ./frontend-dentist
+    ports:
+      - "5174:80"
+
   map-service:
     build: ./map-service
     ports:
       - "3000:3000"
-    # environment:
-    #  - MONGODB_URI=mongodb://map-service-db:27017/MapServiceDB
 
   map-service-db:
     image: mongo
