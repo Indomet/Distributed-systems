@@ -26,19 +26,13 @@ Start by running the Statistics Microservice, the default port is `5177`.
 
 To run the statistics script, follow these steps:
 
-1. Navigate to the `statistics` folder in your terminal:
-
-   ```bash
-   cd statistics
-   ```
-
-2. Make the script executable by running:
+1. Make the script executable by running:
 
    ```bash
    chmod +x statistics.sh
    ```
 
-3. Execute the script:
+2. Execute the script:
 
    ```bash
    ./statistics.sh
