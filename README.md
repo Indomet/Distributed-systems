@@ -20,8 +20,7 @@ To conduct Locust testing, follow these steps:
 
 ## Statistics
 
-Certainly! Here's a markdown version for your instructions:
-
+Start by running the Statistics Microservice, the default port is `5177`.
 
 ## Running Statistics Script
 
